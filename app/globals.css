@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+:root {
+  /* Dark Mode by Default (Vantage Theme) */
+  --background: #0f0f13;
+  --foreground: #ededed;
+  
+  /* Vantage Neon Palette */
+  --card: #1f1f27;
+  --card-foreground: #ededed;
+  
+  --popover: #1f1f27;
+  --popover-foreground: #ededed;
+  
+  --primary: #ff4655; /* Valorant Red */
+  --primary-foreground: #ffffff;
+  
+  --secondary: #2a2a35;
+  --secondary-foreground: #ffffff;
+  
+  --muted: #2a2a35;
+  --muted-foreground: #a1a1aa;
+  
+  --accent: #00ffcc; /* Neon Green/Cyan */
+  --accent-foreground: #0f0f13;
+  
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  
+  --border: #2e2e3a;
+  --input: #2e2e3a;
+  --ring: #ff4655;
+  
+  --radius: 0.5rem;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  
+  --radius-sm: calc(var(--radius) - 2px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+  @apply antialiased;
+}
